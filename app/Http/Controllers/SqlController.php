@@ -1,5 +1,5 @@
 <?php
-
+/*
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -11,6 +11,7 @@ class SqlController extends Controller
     public function index(){
         $users = DB::select('select * from users');
         return view('welcome', ['users' => $users]);
-        
+
     }
 }
+*/

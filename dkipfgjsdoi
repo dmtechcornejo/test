@@ -1,0 +1,61 @@
+[33mcommit cca5d30aeb1f923303fba74e514228ab40475c5a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: dmtechjcornejo <jcornejo@dmtech.cl>
+Date:   Wed Mar 9 10:18:52 2022 -0300
+
+    Second Commit
+
+[1mdiff --git a/resources/views/layouts/camaras.blade.php b/resources/views/layouts/camaras.blade.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/resources/views/layouts/index.blade.php b/resources/views/layouts/index.blade.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/resources/views/layouts/vehiculos.blade.php b/resources/views/layouts/vehiculos.blade.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/resources/views/plantilla.blade.php b/resources/views/plantilla.blade.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/resources/views/welcome.blade.php b/resources/views/welcome.blade.php[m
+[1mdeleted file mode 100644[m
+[1mindex 28270d6..0000000[m
+[1m--- a/resources/views/welcome.blade.php[m
+[1m+++ /dev/null[m
+[36m@@ -1,37 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="es">[m
+[31m-<head>[m
+[31m-<title>Titulo de la web| Menos de 55 caracteres</title>[m
+[31m-<meta charset="utf-8" />[m
+[31m-<meta name="description" content="Debe contener las palabras clave, tratar de atraer clicks y de longitud entre 150 y 160 caracteres">[m
+[31m-<link rel="stylesheet" href="estilos.css" />[m
+[31m-<link rel="shortcut icon" href="/favicon.ico" />[m
+[31m-</head>[m
+[31m-[m
+[31m-<body>[m
+[31m-    <nav>[m
+[31m-        <a class="active" href="/index.htm">Home</a>[m
+[31m-        <a href="/uno.htm">Uno</a>[m
+[31m-        <a href="/dos.htm">Dos</a>[m
+[31m-        <a href="/tres.htm">Tres</a>[m
+[31m-    </nav>[m
+[31m-    <header>[m
+[31m-       <h1>Mi sitio web</h1>[m
+[31m-       <p>Mi sitio web creado en html5</p>[m
+[31m-[m
+[31m-    </header>[m
+[31m-    <section>[m
+[31m-       <article>[m
+[31m-           <h2>Titilo de contenido</h2>[m
+[31m-           <p> Contenido </p>[m
+[31m-       </article>[m
+[31m-    </section>[m
+[31m-    <aside>[m
+[31m-       <h3>Titulo de contenido</h3>[m
+[31m-           <p>contenido</p>[m
+[31m-    </aside>[m
+[31m-    <footer>[m
+[31m-        Creado por mi el 2011[m
+[31m-    </footer>[m
+[31m-</body>[m
+[31m-</html>[m

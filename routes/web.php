@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('plantilla');
+    return view('layouts.plantilla');
 });
+Route::get('camara', 'TestController@camara')->name('lista_camara');
+//Route::resource('layouts', TestController::class);

@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\TestController;
+
+use app\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.plantilla');
-});
-Route::get('camara', 'TestController@camara')->name('lista_camara');
-//Route::resource('layouts', TestController::class);
+
+Route::get('/', 'TestController@index');
+
+
+// Route::get('/', function () {
+//     return view('layouts.index');
+// });
+// #Rutas Camaras
+ Route::get('/camara', 'TestController@camara');
+
+// #Rutas Vehiculos
+// Route::get('vehiculo', 'TestController@vehiculo')->name('lista_vehiculo');
+
+// #Rutas Personas
+// Route::get('persona', 'TestController@persona')->name('lista_persona');
+// //Route::resource('layouts', TestController::class);
+
+// Route::get('camara', 'TestController@camara');
+// //Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
+

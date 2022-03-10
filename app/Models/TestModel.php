@@ -10,7 +10,7 @@ class TestModel extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nombre',
+        'camara',
         'rut'
     ];
 }

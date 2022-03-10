@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ Route('lista_camara') }}">Camaras</a>
+                    <a class="nav-link" href="{{Route}}">Camaras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Vehiculos</a>

@@ -15,4 +15,19 @@ class TestController extends Controller
     {
         return view('layouts.camara');
     }
+
+    public function equipo()
+    {
+        return view('layouts.equipo');
+    }
+
+    public function persona()
+    {
+        return view('layouts.personas');
+    }
+
+    public function vehiculo()
+    {
+        return view('layouts.vehiculos');
+    }
 }

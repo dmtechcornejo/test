@@ -25,10 +25,15 @@ Route::get('/', 'TestController@index');
 // #Rutas Camaras
  Route::get('/camara', 'TestController@camara');
 
+ // #Rutas Nuestro Equipo
+ Route::Get('/equipo', 'TestController@equipo');
+
 // #Rutas Vehiculos
+Route::get('/vehiculo', 'TestController@vehiculo');
 // Route::get('vehiculo', 'TestController@vehiculo')->name('lista_vehiculo');
 
 // #Rutas Personas
+Route::get('/persona', 'TestController@persona');
 // Route::get('persona', 'TestController@persona')->name('lista_persona');
 // //Route::resource('layouts', TestController::class);
 

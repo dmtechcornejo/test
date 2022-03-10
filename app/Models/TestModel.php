@@ -11,6 +11,9 @@ class TestModel extends Model
 
     protected $fillable = [
         'camara',
-        'rut'
+        'rut',
+        'vehiculo',
+        'equipo',
+        'persona'
     ];
 }

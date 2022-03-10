@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 
-@section('title', 'Page Title')
+@section('title', 'Vehiculos')
 
 @section('content')
     <!-- Contenido Página -->

@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 
-@section('title', 'Page Title')
+@section('title', 'Inicio')
 
 @section('content')
     <div class="container" style="margin-top:30px">

@@ -2,6 +2,7 @@
 
 
 use app\Http\Controllers\TestController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,7 @@ Route::get('/', 'TestController@index');
 // Route::get('/', function () {
 //     return view('layouts.index');
 // });
+//# Base de Datos
 // #Rutas Camaras
  Route::get('/camara', 'TestController@camara');
 
@@ -29,7 +31,9 @@ Route::get('/', 'TestController@index');
  Route::Get('/equipo', 'TestController@equipo');
 
 // #Rutas Vehiculos
-Route::get('/vehiculo', 'TestController@vehiculo');
+Route::get('/vehiculo', 'TestController@vehiculo', function(){
+    $notes = DB::table('notes')->get();
+});
 // Route::get('vehiculo', 'TestController@vehiculo')->name('lista_vehiculo');
 
 // #Rutas Personas

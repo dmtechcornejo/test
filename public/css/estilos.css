@@ -1,0 +1,11 @@
+ul.nav-pills {
+    top: 20px;
+    position: fixed;
+}
+div.col-8 div {
+    height: 500px;
+}
+div.fakeimg {
+    height: 200px;
+    background: #aaa;
+}

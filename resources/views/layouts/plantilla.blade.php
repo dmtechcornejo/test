@@ -8,17 +8,16 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .fakeimg {
-            height: 200px;
-            background: #aaa;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css') }}">
+    <!-- Incorporación Plugin DataTable -->
+    <link rel="stylesheet" href="cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 @section('sidebar')
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="/"><img src="{{ asset('img/logo.png') }}" alt="Domotica" style="width:400px;"></a>
+        <a class="navbar-brand" href="/"><img src="{{ asset('img/logo.png') }}" alt="Domotica" style="width:50%;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>

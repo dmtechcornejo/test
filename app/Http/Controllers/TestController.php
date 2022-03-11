@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Vehiculo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Translation\FileLoader;
 
 class TestController extends Controller
@@ -29,10 +31,11 @@ class TestController extends Controller
 
     public function vehiculo()
     {
-        return view('layouts.vehiculos');
+        $listarVehi = DB::select('select left(crossTime, 10) fecha, cameraIndexCode camara, count(crossTime)
+						from detalle_vehiculos
+						group by fecha, camara');
+        //$listarAutos = Vehiculo::all();
+        return view('layouts.vehiculos', compact('listarVehi'));
     }
-    public function logo()
-    {
-        return imagepng('img.logo');
-    }
+
 }

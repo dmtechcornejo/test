@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Translation\FileLoader;
 
 class TestController extends Controller
 {
@@ -29,5 +30,9 @@ class TestController extends Controller
     public function vehiculo()
     {
         return view('layouts.vehiculos');
+    }
+    public function logo()
+    {
+        return imagepng('img.logo');
     }
 }

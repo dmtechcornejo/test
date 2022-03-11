@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 
-@section('title', 'Page Title')
+@section('title', 'Nuestro Equipo')
 
 @section('content')
     <h1>Nuestro equipo de Trabajo</h1>

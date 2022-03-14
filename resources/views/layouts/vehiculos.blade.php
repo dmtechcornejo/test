@@ -29,6 +29,7 @@
                     </tbody>
                 </table>
             </div>
+            @break
         @endforeach
     </div>
 @endsection

@@ -18,7 +18,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        {{ asset($listarAuto->crossTime }}
+                        {{ asset($listarAuto->$crossTime) }}
                     </tr>
                     <tr>
 

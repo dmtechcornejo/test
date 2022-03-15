@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Vehiculo;
+use App\Models\TestModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Translation\FileLoader;
@@ -11,7 +11,7 @@ class TestController extends Controller
 {
     public function index()
     {
-        return view('layouts.index');
+        return view('index');
     }
 
     public function camara()
@@ -31,11 +31,8 @@ class TestController extends Controller
 
     public function vehiculo()
     {
-        $listarVehi = DB::select('select left(crossTime, 10) fecha, cameraIndexCode camara, count(crossTime)
-						from detalle_vehiculos
-						group by fecha, camara');
-        //$listarAutos = Vehiculo::all();
-        return view('layouts.vehiculos', compact('listarVehi'));
+        $vehiculos = TestModel::all();
+        return view('layouts.vehiculos', compact('vehiculos'));
     }
 
 }

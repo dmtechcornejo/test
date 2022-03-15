@@ -24,4 +24,5 @@ Route::controller(TestController::class)->group(function()
     Route::get('/equipo', 'equipo');
     Route::get('/persona', 'persona');
     Route::get('/vehiculo', 'vehiculo');
+    Route::get('/grafico', 'grafico');
 });

@@ -9,11 +9,7 @@ class TestModel extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'camara',
-        'rut',
-        'vehiculo',
-        'equipo',
-        'persona'
-    ];
+    protected $table = 'autos';
+    protected $primaryKey = 'id';
+    protected $fillable = ['fecha', 'camara', 'orientacion'];
 }

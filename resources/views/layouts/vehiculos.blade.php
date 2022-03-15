@@ -5,32 +5,27 @@
 @section('content')
     <!-- Contenido Página -->
     <!--Tabla-->
-    <div class="container mt-4">
-        @foreach($listarVehi as $listarAuto)
-            <div class="container">
-                <table class="table table-hover">
-                    <thead>
+    <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+        <table class="table-fixed w-full">
+            <thead>
+                <tr class="bg-sky-600 text-white">
+                    <th class="w-1/8 py-4 ...">Id</th>
+                    <th class="w-1/8 py-4 ...">Fecha</th>
+                    <th class="w-1/16 py-4 ...">Camara</th>
+                    <th class="w-1/16 py-4 ...">Orientacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($vehiculos as $listarAuto)
                     <tr>
-                        <th>Fecha</th>
-                        <th>Orientacón</th>
-                        <th>Tipo</th>
+                        <th>{{ $listarAuto->id }}</th>
+                        <th>{{ $listarAuto->fecha }}</th>
+                        <th>{{ $listarAuto->camara }}</th>
+                        <th>{{ $listarAuto->orientacion }}</th>
                     </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        {{ asset($listarAuto->$crossTime) }}
-                    </tr>
-                    <tr>
-
-                    </tr>
-                    <tr>
-
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            @break
-        @endforeach
+                @endforeach
+            </tbody>
+        </table>
     </div>
 @endsection
 

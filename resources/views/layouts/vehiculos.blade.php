@@ -6,7 +6,7 @@
     <!-- Contenido Página -->
     <!--Tabla-->
     <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-        <table class="table-fixed w-full">
+        <table id="dataTable" class="table-fixed w-full">
             <thead>
                 <tr class="bg-sky-600 text-white">
                     <th class="w-1/8 py-4 ...">Id</th>
@@ -27,6 +27,12 @@
             </tbody>
         </table>
     </div>
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+
+        });
+    </script>
 @endsection
 
 

@@ -11,8 +11,8 @@
     {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <!-- Incorporación Plugin DataTable -->
-    <link rel="stylesheet" href="cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <script src="cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
 </head>
 <body>

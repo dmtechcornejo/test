@@ -5,7 +5,7 @@
 @section('content')
     <!-- Contenido Página -->
     <!--Tabla-->
-    <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+    <div class="bg-white dark:bg-black overflow-hidden shadow-xl sm:rounded-lg">
         <table id="dataTable" class="table-fixed w-full">
             <thead>
                 <tr class="bg-sky-600 text-white">

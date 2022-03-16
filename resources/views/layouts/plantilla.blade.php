@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <title>Domotica @yield('title')</title>
     <meta charset="utf-8">
@@ -23,6 +23,23 @@
 </head>
 <body>
 @section('sidebar')
+<script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+
+// Whenever the user explicitly chooses light mode
+localStorage.theme = 'light'
+
+// Whenever the user explicitly chooses dark mode
+localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses to respect the OS preference
+localStorage.removeItem('theme')
+</script>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="/"><img src="{{ asset('img/logo.png') }}" alt="Domotica" style="width:50%;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

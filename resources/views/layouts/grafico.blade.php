@@ -13,12 +13,9 @@
         </table>
         <div class="container">
             <canvas id="Grafico"></canvas>
-            <script>
-                const myChart = new Chart(
-                  document.getElementById('Grafico'),
-                  config
-                );
-              </script>
+            <div style="width:75%;">
+                {!! $chartjs->render() !!}
+            </div>
         </div>
     </div>
 @endsection

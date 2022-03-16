@@ -29,9 +29,22 @@ class TestController extends Controller
         return view('layouts.personas');
     }
 
+    public function grafico()
+    {
+        return view('layouts.grafico');
+    }
+
     public function vehiculo()
     {
-        $vehiculos = TestModel::all();
+        $vehiculos = DB::SELECT('SELECT LEFT(dv.crossTime, 10) Fecha, dv.cameraIndexCode Camara,
+        CASE
+            WHEN vc.valor = 1 THEN "Salida"
+            WHEN vc.valor = 2 THEN "Entrada"
+        END Orientacion
+        FROM detalle_vehiculos dv
+        JOIN valorcamara vc
+        ON vc.idCamara = dv.cameraIndexCode
+        GROUP BY Fecha, Camara, Orientacion');
         return view('layouts.vehiculos', compact('vehiculos'));
     }
 

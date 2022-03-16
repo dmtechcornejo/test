@@ -9,19 +9,17 @@
         <table id="dataTable" class="table-fixed w-full">
             <thead>
                 <tr class="bg-sky-600 text-white">
-                    <th class="w-1/8 py-4 ...">Id</th>
-                    <th class="w-1/8 py-4 ...">Fecha</th>
-                    <th class="w-1/16 py-4 ...">Camara</th>
-                    <th class="w-1/16 py-4 ...">Orientacion</th>
+                    <th class="w-1/8 py-4">Fecha</th>
+                    <th class="w-1/16 py-4">Camara</th>
+                    <th class="w-1/16 py-4">Orientacion</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($vehiculos as $listarAuto)
                     <tr>
-                        <th>{{ $listarAuto->id }}</th>
-                        <th>{{ $listarAuto->fecha }}</th>
-                        <th>{{ $listarAuto->camara }}</th>
-                        <th>{{ $listarAuto->orientacion }}</th>
+                        <th>{{ date("d/m/Y", strtotime($listarAuto->Fecha)) }}</th>
+                        <th>{{ $listarAuto->Camara }}</th>
+                        <th>{{ $listarAuto->Orientacion }}</th>
                     </tr>
                 @endforeach
             </tbody>
@@ -30,7 +28,6 @@
     <script>
         $(document).ready(function () {
             $('#dataTable').DataTable();
-
         });
     </script>
 @endsection

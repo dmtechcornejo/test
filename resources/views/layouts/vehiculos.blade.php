@@ -12,6 +12,7 @@
                     <th class="w-1/8 py-4">Fecha</th>
                     <th class="w-1/16 py-4">Camara</th>
                     <th class="w-1/16 py-4">Orientacion</th>
+                    <th class="w-1/16 py-4">Cantidad</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +21,7 @@
                         <th>{{ date("d/m/Y", strtotime($listarAuto->Fecha)) }}</th>
                         <th>{{ $listarAuto->Camara }}</th>
                         <th>{{ $listarAuto->Orientacion }}</th>
+                        <th>{{ $listarAuto->Cantidad }}</th>
                     </tr>
                 @endforeach
             </tbody>

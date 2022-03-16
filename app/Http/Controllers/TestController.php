@@ -40,7 +40,8 @@ class TestController extends Controller
         CASE
             WHEN vc.valor = 1 THEN "Salida"
             WHEN vc.valor = 2 THEN "Entrada"
-        END Orientacion
+        END Orientacion,
+        COUNT(dv.cameraIndexCode) Cantidad
         FROM detalle_vehiculos dv
         JOIN valorcamara vc
         ON vc.idCamara = dv.cameraIndexCode
